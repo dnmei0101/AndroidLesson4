@@ -5,37 +5,39 @@
     android:layout_height="match_parent"
     android:background="#FFDDFD"
     android:orientation="vertical"
-    android:layout_margin="15dp">
+    android:layout_margin="@dimen/background_margin"
+    >
     <TextView
         android:id="@+id/header_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Калькулятор"
-        android:textSize="50sp"
+        android:text="@string/calc_text"
+        android:textSize="@dimen/header_text_size"
         android:textStyle="bold"
         android:textAlignment="center"
 
-        android:layout_marginBottom="50dp"/>
+        android:layout_marginBottom="@dimen/upper_blocks_margin_bottom"/>
     <EditText
         android:id="@+id/edit_text_form"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/edit_text_form_width"
+        android:layout_height="@dimen/edit_text_form_height"
         android:textAlignment="center"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="@dimen/upper_blocks_margin_bottom"
+        android:layout_gravity="center"
         />
     <TextView
         android:id="@+id/result_text"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Результат"
-        android:textSize="30sp"
+        android:layout_height="@dimen/result_text_height"
+        android:text="@string/result_text"
+        android:textSize="@dimen/result_text_size"
         android:textAlignment="center"
         />
     <TextView
         android:id="@+id/result_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
+        android:textSize="@dimen/result_number_text_size"
         android:textStyle="bold"
         android:textAlignment="center"
         />
@@ -44,41 +46,32 @@
         android:layout_height="match_parent">
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="1"
-
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_1"
 
             android:layout_toStartOf="@id/button_2"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/upper_button_top_margin"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="2"
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_2"
 
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/upper_button_top_margin"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="3"
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_3"
 
             android:layout_toEndOf="@id/button_2"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/upper_button_top_margin"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="4"
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_4"
 
 
             android:layout_toStartOf="@id/button_5"
@@ -86,30 +79,26 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            style="@style/CalcButtonStyle"
             android:backgroundTint="@color/black"
-            android:text="5"
+            android:text="@string/button_5"
 
             android:layout_centerHorizontal="true"
             android:layout_below="@id/button_2"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            style="@style/CalcButtonStyle"
             android:backgroundTint="@color/black"
-            android:text="6"
+            android:text="@string/button_6"
 
             android:layout_toEndOf="@id/button_2"
             android:layout_below="@id/button_3"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="7"
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_7"
 
 
             android:layout_toStartOf="@id/button_2"
@@ -117,30 +106,24 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="8"
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_8"
 
             android:layout_centerHorizontal="true"
             android:layout_below="@id/button_5"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="9"
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_9"
 
             android:layout_toEndOf="@id/button_2"
             android:layout_below="@id/button_6"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/delete_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="C"
+            style="@style/CalcButtonStyle"
+            android:text="@string/delete_button"
 
 
             android:layout_toStartOf="@id/button_2"
@@ -148,86 +131,69 @@
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="0"
+            style="@style/CalcButtonStyle"
+            android:text="@string/button_0"
 
             android:layout_centerHorizontal="true"
             android:layout_below="@id/button_8"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_decimal"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="."
+            style="@style/CalcButtonStyle"
+            android:text="@string/decimal_point_button"
 
             android:layout_toEndOf="@id/button_2"
             android:layout_below="@id/button_9"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/result_button"
-            android:layout_width="150dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/black"
-            android:text="="
+            style="@style/CalcWideButtonStyle"
+            android:text="@string/result_button"
 
             android:layout_centerHorizontal="true"
             android:layout_below="@id/button_0"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/plus_button"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:backgroundTint="@color/black"
-            android:text="+"
+            style="@style/CalcLargerButtonStyle"
+            android:text="@string/plus_button"
 
             android:layout_toStartOf="@id/button_1"
-            android:layout_marginTop="25dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/left_button_margin_top"
+            android:layout_marginEnd="@dimen/left_button_margin_end"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/minus_button"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:backgroundTint="@color/black"
-            android:text="-"
+            style="@style/CalcLargerButtonStyle"
+            android:text="@string/minus_button"
 
             android:layout_toStartOf="@id/button_1"
             android:layout_below="@+id/plus_button"
-            android:layout_margin="10dp"
+            android:layout_marginTop="@dimen/left_button_margin_top"
+            android:layout_marginEnd="@dimen/left_button_margin_end"
             />
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/multi_button"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:backgroundTint="@color/black"
-            android:text="*"
+            style="@style/CalcLargerButtonStyle"
+            android:text="@string/multi_button"
 
             android:layout_toEndOf="@id/button_3"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/right_button_margin_top"
+            android:layout_marginLeft="@dimen/right_button_margin_left"
             />
         <com.google.android.material.button.MaterialButton
             android:id="@+id/division_button"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:backgroundTint="@color/black"
-            android:text="÷"
+            style="@style/CalcLargerButtonStyle"
+            android:text="@string/division_button"
 
             android:layout_toEndOf="@id/button_3"
             android:layout_below="@+id/plus_button"
-            android:layout_margin="10dp"
+            android:layout_marginTop="@dimen/right_button_margin_top"
+            android:layout_marginLeft="@dimen/right_button_margin_left"
             />
         <com.google.android.material.button.MaterialButton
-            android:layout_width="125dp"
-            android:layout_height="125dp"
-            android:background="@drawable/dragon_image"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"/>
+            style="@style/dragon_image_style"/>
 
     </RelativeLayout>
 </LinearLayout>

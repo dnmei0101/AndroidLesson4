@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="app_name">Android Урок 4 - Калькулятор</string>
+        <string name="result_text">Результат</string>
+        <string name="calc_text">Калькулятор</string>
+        <string name="button_1">1</string>
+        <string name="button_2">2</string>
+        <string name="button_3">3</string>
+        <string name="button_4">4</string>
+        <string name="button_5">5</string>
+        <string name="button_6">6</string>
+        <string name="button_7">7</string>
+        <string name="button_8">8</string>
+        <string name="button_9">9</string>
+        <string name="delete_button">C</string>
+        <string name="button_0">0</string>
+        <string name="decimal_point_button">.</string>
+        <string name="result_button">=</string>
+        <string name="plus_button">+</string>
+        <string name="minus_button">-</string>
+        <string name="multi_button">*</string>
+        <string name="division_button">÷</string>
+    </resources>
