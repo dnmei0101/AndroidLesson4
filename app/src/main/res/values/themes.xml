@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.AndroidLesson4" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,4 +13,30 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="CalcButtonStyle">
+        <item name="android:layout_width">@dimen/button_default_width</item>
+        <item name="android:layout_height">@dimen/button_default_height</item>
+        <item name="backgroundTint">@color/black</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="CalcWideButtonStyle" parent="CalcButtonStyle">
+        <item name="android:layout_width">@dimen/wide_button_default_width</item>
+        <item name="android:layout_height">@dimen/wide_button_default_height</item>
+    </style>
+
+    <style name="CalcLargerButtonStyle" parent="CalcButtonStyle">
+        <item name="android:layout_width">@dimen/larger_button_default_width</item>
+        <item name="android:layout_height">@dimen/larger_button_default_height</item>
+    </style>
+
+    <style name="dragon_image_style">
+        <item name="android:layout_width">@dimen/dragon_image_width</item>
+        <item name="android:layout_height">@dimen/dragon_image_height</item>
+        <item name="android:background">@drawable/dragon_image</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
 </resources>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Android Lesson 4 - Calculator</string>
-    <string name="result_text">Result</string>
-    <string name="calc_text">Calculator</string>
+    <string name="app_name">Android Урок 4 - Калькулятор</string>
+    <string name="result_text">Результат</string>
+    <string name="calc_text">Калькулятор</string>
     <string name="button_1">1</string>
     <string name="button_2">2</string>
     <string name="button_3">3</string>
